@@ -24,7 +24,7 @@ function clearText(field)
 }
 </script>
 
-<!-- Seurantakoodi-->
+<!-- ------------------- GOOGLE ANALYTICS CODE------------- -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,53 +41,55 @@ function clearText(field)
 <div id="templatemo_container">
     	<div id="templatmeo_header">
         	<div id="templatemo_menu">
-            	            </div>
+        	</div>
             
             <div id="templatemo_logo_area">
             	<div id="templatemo_logo">
                 	<img src = "images/tagfunprofile.png" width="500" height="200"></div>
-            </div>
+                </div>
             
             <div class="templatemo_welcome">
 		
                 <div class="templatemo_more">
-                	<a href="register.html">Rekisteröidy</a>
+                	<a href="register.html">Rekisterï¿½idy</a>
                 </div>
                 
                 <div class="templatemo_more">
                 	<a href="http://www.jmdprojects.net/tagfun/index.html">Etusivu</a></div>
-            </div>
+                </div>
 
-	        </div><!-- End Of header -->
+	 </div>
+	 
+	  <!-- -----------End Of header------------ -->
         
 
-<!-- ---------------------------------------------------REGISTER FORM---------------------------------------------- -->
-<link rel="stylesheet" href="css/style.css">
-<div class="container">
-    <section class="register">
-      <h1>Kirjaudu sisään</h1>
-      <form method="get" action="login_valid.php">
-      <div class="reg_section personal_info">
-      <div class="reg_section password">
-      <h3>Sähköposti*</h3>
-      <input type="text" name="sahkoposti" value="" placeholder="Sähköposti toimii käyttäjätunnuksena">
-      </div>
-      <div class="reg_section password">
-      <h3>Salasana*</h3>
-	<input type="password" name="salasana" value="" placeholder="Anna salasana">
-      </div>
-      <p class="submit"><input type="submit" name="commit" value="Kirjaudu"></p>
-      </form>
-    </section>
-  </div>
+<!-- ---------------------------------------------------LOGIN FORM---------------------------------------------- -->
+	<link rel="stylesheet" href="css/style.css">
+	<div class="container">
+    	<section class="login">
+		<h1>Kirjaudu sisÃ¤Ã¤n</h1>
+      		<form method="get" action="login_valid.php">
+      			<div class="reg_section personal_info">
+      			<div class="reg_section password">
+      				<h3>SÃ¤kÃ¶posti*</h3>
+      				<input type="text" name="sahkoposti" value="" placeholder="SÃ¤hkÃ¶posti toimii  kÃ¤yttÃ¤jÃ¤tunnuksena">      			<div class="reg_section password">
+      				<h3>Salasana*</h3>
+				<input type="password" name="salasana" value="" placeholder="Anna salasana">
+      			</div>
+      			<p class="submit"><input type="submit" name="commit" value="Kirjaudu"></p>
+      		</form>
+    	</section>
+	</div>
 
 
-<!-- --------------------------------------FOOTER----------------------------------------- -->
+<!-- ---------------FOOTER-------------------------- -->
                             
         <div id="templatemo_footer">
-        <img src="images/footertext.png">
+        	<img src="images/footertext.png">
 	</div>
-    </div><!-- End Of Container -->
+</div>
+
+<!-- ----------End Of Container----------- -->
   
 <!--  Free CSS Templates by TemplateMo.com  -->
 
