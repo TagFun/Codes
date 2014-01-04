@@ -4,11 +4,11 @@
 
 	session_start();
 
-	// Yhdistet‰‰n tietokantaan
-	$connect = mysql_connect("mysql1.sigmatic.fi","jmdproje_konami","NINNI123");
+	// YhdistetÔøΩÔøΩn tietokantaan
+	$connect = mysql_connect("mysql1.sigmatic.fi","jmdproje_konami","");
 	if (!$connect)
 	{
-		die("MySQL ei voida yhdist‰‰!");
+		die("MySQL ei voida yhdist√§√§");
 	}
 
 	$DB = mysql_select_db('jmdproje_tagfun');
@@ -42,27 +42,27 @@
 	// Tarkistetaan annetut tiedot
 	if($Sahkoposti == "")
 	{
-		die("Et antanut k‰ytt‰j‰tunnustasi (sahkopostiosoitetta)");
+		die("Et antanut k√§ytt√§j√§tunnustasi (sahkopostiosoitetta)");
 	}
 
 	if($Sahkoposti_Check == false)
 	{
-		die("Kyseist‰ s‰hkˆpostia ei ole olemassa");
+		die("Kyseist√§ s√§hk√∂postia ei ole olemassa");
 	}
 
 	if($Etunimi == "")
 	{
-		die("Et antanut etunime‰si");
+		die("Et antanut etunime√§si");
 	}
 
 	if($Sukunimi == "")
 	{
-		die("Et antanut sukunime‰si");
+		die("Et antanut sukunime√§si");
 	}
 
 	if($Ika == "")
 	{
-		die("Et antanut ik‰‰si");
+		die("Et antanut ik√§√§si");
 	}
 
 	if($Sukupuoli == "")
@@ -70,12 +70,12 @@
 		die("Et antanut sukupuoltasi");
 	}
 
-	// Tarkistetaan onko k‰ytt‰j‰tunnus jo olemassa
+	// Tarkistetaan onko k√§ytt√§j√§tunnus jo olemassa
 	$Query = mysql_query("SELECT * FROM kayttajat WHERE Sahkoposti = '$Sahkoposti' ");
 	$Checkuser = mysql_num_rows($Query);
 	if($Checkuser != 0)
 	{ 
-		echo "K‰ytt‰j‰tunnus " .$Sahkoposti. " on jo k‰ytˆss‰." . "</br>";
+		echo "K√§ytt√§j√§tunnus " .$Sahkoposti. " on jo k√§yt√∂ss√§ . "</br>";
 	}
 
 	$Salasana = 'a';
@@ -84,7 +84,7 @@
 	if(!mysql_query("INSERT INTO kayttajat (Sahkoposti, Salasana, Etunimi, Sukunimi, Yritys, Ika, Sukupuoli)
 	VALUES ('$Sahkoposti', '$Salasana', '$Etunimi', '$Sukunimi', '$Yritys', '$Ika', '$Sukupuoli')"))
 	{
-		die("Yrit‰ uudestaan");
+		die("Yrit√§ uudestaan");
 	}
 
 	else
@@ -111,10 +111,10 @@
 		mysql_query("UPDATE kayttajat SET Salasana ='$Encrypt_salasana' WHERE Sahkoposti='$Sahkoposti'");
 
 		$to      = $Sahkoposti;
-		$subject = 'Kiitos rekisterˆinnist‰!';
-		$message = "Tervetuloa k‰ytt‰j‰ksemme! \n" . "Kayttajatunnus: $Sahkoposti \n" . "Salasana: " . $Salasana;
-		$headers = 'From: rekisteroidy@tagfun.com' . "\r\n" .
-    		'Reply-To: SplitSurvey@example.com' . "\r\n" .
+		$subject = 'Kiitos rekisterÔøΩinnistÔøΩ!';
+		$message = "Tervetuloa k√§ytt√§j√§ksemme! \n" . "Kayttajatunnus: $Sahkoposti \n" . "Salasana: " . $Salasana;
+		$headers = 'From: rekister√∂ityminen@tagfun.net' . "\r\n" .
+    		'Reply-To: @example.com' . "\r\n" .
     		'X-Mailer: PHP/' . phpversion();
 
 		mail($to, $subject, $message, $headers);
@@ -125,7 +125,7 @@
 
 ?>
 
-<!-- ----------------------------------------------WEBSITE HEADER ------------------------------------------------------ -->
+<!-- ------------------WEBSITE HEADER ------------------------------- -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -142,7 +142,7 @@ function clearText(field)
 }
 </script>
 
-<!-- Seurantakoodi-->
+<!-- ---------GOOGLE ANALYTICS CODE--------------- -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -179,15 +179,14 @@ function clearText(field)
 		<style type="text/css">
 		p {text-align: center; color: white;}
 		</style>
-		<p>Kiitos rekisterˆinnist‰! Salasana on l‰hetetty s‰hkˆpostiinne</p><br><br><br><br><br><br><br>
-<!-- --------------------------------------FOOTER----------------------------------------- -->
+		<p>Kiitos rekister√∂itymisest√§! Salasana on l√§hetetty s√§hk√∂postiinne</p>
+		
+<!-- ---------------------------------FOOTER----------------------------------------- -->
                             
         <div id="templatemo_footer">
         <img src="images/footertext.png">
 	</div>
     </div><!-- End Of Container -->
-  
-<!--  Free CSS Templates by TemplateMo.com  -->
 
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js'></script>
 <script type='text/javascript' src='js/logging.js'></script>
