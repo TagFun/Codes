@@ -4,8 +4,8 @@
 
 	session_start();
 
-	// Yhdist‰minen tietokantaan
-	$connect = mysql_connect("mysql1.sigmatic.fi","jmdproje_konami","NINNI123");
+	// YhdistÔøΩminen tietokantaan
+	$connect = mysql_connect("mysql1.sigmatic.fi","jmdproje_konami","");
 
 	if (!$connect)
 	{
@@ -16,7 +16,7 @@
 
 	if(!$DB)
 	{
-		die("MySQL ei voinut yhdist‰‰ tietokantaan");
+		die("MySQL ei voinut yhdist√§√§ tietokantaan");
 	}
 	
 	//echo $_SESSION['sahkoposti']. "  ";
@@ -28,16 +28,16 @@
 
 	else
 	{
-		echo "Kyseist‰ k‰ytt‰j‰tunnusta ei lˆydy";
+		echo "Kyseist√§ k√§ytt√§j√§tunnusta ei l√∂ydy";
 	}
 
 	
-	// Etsit‰‰n k‰ytt‰j‰
+	// Etsit√§√§n k√§ytt√§j√§tunnus
 	$Query = mysql_query("SELECT * FROM kayttajat WHERE Sahkoposti='$Sahkoposti'");
 	
 	if(mysql_num_rows($Query) != 1)
 	{
-		echo "Kyseist‰ k‰ytt‰j‰‰ ei lˆydy";
+		echo "Kyseist√§ k√§ytt√§j√§tunnusta ei l√∂ydy";
 	}
 
 	else
@@ -79,7 +79,7 @@ function clearText(field)
 }
 </script>
 
-<!-- Seurantakoodi-->
+<!-- ------------------- GOOLE ANALYTICS CODE ---------------- -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -139,16 +139,16 @@ function clearText(field)
 
 				<section id = "primary" class = "grid_9">
 					<div id = "bio">
-					<!-- $Kuva t‰ytyy hakea sql fetchill‰ --> 
+					<!-- $Kuva t√∂ytyy hakea sql fetchill√§--> 
 					<img src="<?php echo $Kuva ?>"><br><br>
 
 					<p><b>Nimi:</b> <?php echo $Etunimi?></p><br>
 					<p><b>Sukunimi:</b> <?php echo $Sukunimi?></p><br>
 					<p><b>Yritys:</b> <?php echo $Yritys?></p><br>
-					<p><b>Ik‰:</b> <?php echo $Ika?></p><br>
-					<p><b>Sukupuoli:</b> <?php echo $Sukupuoli?></p><br><br>
+					<p><b>Ik√§:</b> <?php echo $Ika?></p><br>
+					<p><b>Sukupuoli:</b> <?php echo $Sukupuoli?></p><br>
 				</section>
-				<br><br><br><br>
+				
 				<form name="Image" enctype="multipart/form-data" action="update_profile_pic.php" method="POST">
     				<input type="file" name="kuva" size="2000000" accept="image/gif, image/jpeg, image/x-ms-bmp, image/x-png" size="26"><br/>
    				<INPUT type="submit" class="button" name="Submit" value=" Submit ">
@@ -157,14 +157,12 @@ function clearText(field)
 				<br><br><br><br>
 			
 
-<!-- --------------------------------------FOOTER----------------------------------------- -->
+<!-- --------------------------FOOTER----------------------------- -->
                             
         <div id="templatemo_footer">
         <img src="images/footertext.png">
 	</div>
     </div><!-- End Of Container -->
-  
-<!--  Free CSS Templates by TemplateMo.com  -->
 
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js'></script>
 <script type='text/javascript' src='js/logging.js'></script>
