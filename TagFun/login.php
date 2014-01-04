@@ -51,7 +51,7 @@ function clearText(field)
             <div class="templatemo_welcome">
 		
                 <div class="templatemo_more">
-                	<a href="register.html">Rekister�idy</a>
+                	<a href="register.html">Rekisteröidy</a>
                 </div>
                 
                 <div class="templatemo_more">
@@ -72,9 +72,9 @@ function clearText(field)
       			<div class="reg_section personal_info">
       			<div class="reg_section password">
       				<h3>Säköposti*</h3>
-      				<input type="text" name="sahkoposti" value="" placeholder="Sähköposti toimii  käyttäjätunnuksena">      			<div class="reg_section password">
+      					<input type="text" name="sahkoposti" value="" placeholder="Sähköposti toimii  käyttäjätunnuksena">      			<div class="reg_section password">
       				<h3>Salasana*</h3>
-				<input type="password" name="salasana" value="" placeholder="Anna salasana">
+					<input type="password" name="salasana" value="" placeholder="Anna salasana">
       			</div>
       			<p class="submit"><input type="submit" name="commit" value="Kirjaudu"></p>
       		</form>
