@@ -1,6 +1,6 @@
 <!-- This is short and simple demostration what kind of XML syntax looks like.
 XML is eXtensible Markup Language much like HTML and it's designed for transport and store data unlike HTML that was 
-designed for display data. So other words, XML really doesn't do anything. -->
+designed for display data. So in other words, XML really doesn't do anything. -->
 	
 
 <?xml version="1.0"?>
