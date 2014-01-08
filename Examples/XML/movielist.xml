@@ -1,0 +1,26 @@
+<!-- This is short and simple demostration what kind of XML syntax looks like.
+XML is eXtensible Markup Language much like HTML and it's designed for transport and store data and XML was designed for display data.
+So in reality, XML really doesn't do anything. -->
+	
+
+<?xml version="1.0"?>
+<movielist>
+  <movie gategory="ACTION">
+    <title lang="en">Kick ass</title>
+    <director>Matthew Vaughn</director>
+    <year>2010</year>
+    <language>english</language>
+  </movie>
+  <movie category="ACTION">
+    <title lang="en">Kick ass 2</title>
+    <director>Matthew Vaughn</director>
+    <year>2013</year>
+    <language>english</language>
+  </movie>
+  <movie category="HORROR">
+    <title lang="en">Curse of Chucky</title>
+    <director>Don Mancini</director>
+    <year>2013</year>
+    <language>english</language>
+  </movie>
+</movielist>
