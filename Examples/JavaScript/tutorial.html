@@ -1,0 +1,26 @@
+<!-- JavaScript is the scripting language of the Web. All modern HTML pages are using JavaScript.
+rototype-based scripting language with dynamic typing and has first-class functions. Its syntax was influenced by C. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript tutorial</h1>
+<p id ="text">JavaScript can change the content of an HTML element.</p>
+
+<!-- Here starts JavaScript -->
+<script>
+function myFunction()
+{
+	x=document.getElementById("text");  // Find the element
+	x.innerHTML="It's working!";    // Change the content
+}
+</script>
+<!-- JavaScript ends here -->
+
+<button type="button" onclick="myFunction()">Click click!</button>
+
+<!-- See it yourself: http://jsfiddle.net/Frn8y/2/ -->
+</body>
+</html>
+
