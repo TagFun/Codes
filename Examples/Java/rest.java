@@ -4,12 +4,12 @@ import javax.ws.rs.Path;
 import javax.ws.rs.GET;
 import javax.ws.rs.Produces;
 
-// Määritellään URL-osoite, josta palvelu on käytettävissä
-// HTTP-pyynnön avulla.
+// Mï¿½ï¿½ritellï¿½ï¿½n URL-osoite, josta palvelu on kï¿½ytettï¿½vissï¿½
+// HTTP-pyynnï¿½n avulla.
 @Path ("/testipalvelu")
 public class RestPalvelu {
 
-   // Määritellään metodi kutsuttavaksi GET-pyynnöllä
+   // Mï¿½ï¿½ritellï¿½ï¿½n metodi kutsuttavaksi GET-pyynnï¿½llï¿½
    // ja palauttavaksi teksti-muotoisen paluuarvon.
    @GET
    @Produces ("text/plain")
@@ -21,7 +21,7 @@ public class RestPalvelu {
 }
 
 /////////////////////////////////////////////////////////
-// ** SERVLET-MÄÄRITYS **
+// ** SERVLET-Mï¿½ï¿½RITYS **
 
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
@@ -58,7 +58,7 @@ public class RestPalvelu {
 
     public String testi() 
 	{
-            return "Toimiiko??”;
+            return "Toimiiko??ï¿½;
     }
 
     @GET
@@ -70,6 +70,3 @@ public class RestPalvelu {
             return "Uusi metodi!!";
     }  
 }
-
-/////////////////////////////////////////////////////////
-// ** @PATH -ANNOTAATIO **
