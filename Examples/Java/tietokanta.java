@@ -28,7 +28,7 @@ public class TietokantaSovellus {
                 lause = yhteys.createStatement();
 					
 		// Suoritetaan kysely ja sijoitetaan tulokset
-                tulokset = lause.executeQuery("SELECT * FROM Asiakkaat"
+                tulokset = lause.executeQuery("SELECT * FROM Asiakkaat");
 					
                 // K�sitell��n tulokset jokaisesta palautetusta rivist� ...
 
