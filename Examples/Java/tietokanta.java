@@ -13,24 +13,24 @@ public class TietokantaSovellus {
            ResultSet tulokset;
 
 	String palvelin_url = "jdbc:mysql://localhost:3306/kurssikanta";
-        String tunnus = “root”;
-        String salas = “”;
+        String tunnus = "root";
+        String salasana = "";
 
             try {            
 		// Ladataan tietokanta-ajuri (MySQL J/Connector)
 		Class.forName("com.mysql.jdbc.Driver").newInstance();
 
 		// Luodaan yhteys tietokantaan
-		// Valitaan samalla käytettävä tietokanta
+		// Valitaan samalla kï¿½ytettï¿½vï¿½ tietokanta
 		yhteys = DriverManager.getConnection(palvelin_url, tunnus, salas);
 
-                // Luodaan lauseke tietokantakyselyä varten
+                // Luodaan lauseke tietokantakyselyï¿½ varten
                 lause = yhteys.createStatement();
 					
 		// Suoritetaan kysely ja sijoitetaan tulokset
-                tulokset = lause.executeQuery("SELECT * FROM Asiakkaat"
+                tulokset = lause.executeQuery("SELECT * FROM Asiakkaat");
 					
-                // Käsitellään tulokset jokaisesta palautetusta rivistä ...
+                // Kï¿½sitellï¿½ï¿½n tulokset jokaisesta palautetusta rivistï¿½ ...
 
                 while ( tulokset.next() )
                 {
