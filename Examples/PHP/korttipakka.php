@@ -17,11 +17,11 @@ poistetaan se pinkasta. Pakkaa pyöritellään läpi niin kauan aikaa, kunnes ka
 			unset($cards[0]);
 
 			// Tulostetaan randomoitu kortti
-			echo "Nostettu kortti: " . $randomCard;
+			echo "You picked a card: " . $randomCard;
 
 			// Tulostetaan kuinka monta korttia on jäljellä
-			echo $randomCard . " poisettiin pakasta";
-			echo "Kortteja j�ljell�: " . intval(count($cards));
+			echo $randomCard . " card was removed from the deck";
+			echo intval(count($cards)) . " cards left";
 
 		} while ($cards != NULL)
 						
