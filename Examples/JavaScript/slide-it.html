@@ -1,0 +1,36 @@
+<!-- SLIDESHOW (INSIDE HEAD) -->
+	<script type ="text/javascript">
+		var image1 = new Image()
+		image1.src="images/slide1.jpg"
+		var image2 = new Image()
+		image2.src="images/slide2.jpg"
+		var image3 = new Image()
+		image3.src="images/slide4.jpg"
+		var image4 = new Image()
+		image4.src="images/slide5.jpg"
+		var image5 = new Image()
+		image5.src="images/slide3.jpg"
+	</script>
+
+<!-- ------ SLIDES (INSIDE BODY) ---------------- -->
+		<div class ="slideit">
+      		<img src="images/slide1.jpg" name="slide" width="1270" height="400" />
+		<script>
+		<!--
+		//variable that will increment through the images
+		var step=1
+		function slideit(){
+			//if browser does not support the image object, exit.
+			if (!document.images)
+				return
+				document.images.slide.src=eval("image"+step+".src")
+			if (step<5)
+				step++
+			else
+				step=1
+				//call function "slideit()" every 2.5 seconds
+				setTimeout("slideit()",2500)
+		}
+			slideit()
+			//-->
+		</script>
