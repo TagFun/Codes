@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<!-- disable iPhone inital scale -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+<title>TagFun | Homepage</title>
+
+<!-- main css -->
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<!-- media queries css -->
+<link href="media-queries.css" rel="stylesheet" type="text/css">
+
+<!-- html5.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!-- SLIDESHOW -->
+	<script type ="text/javascript">
+		var image1 = new Image()
+		image1.src="images/slide1.jpg"
+		var image2 = new Image()
+		image2.src="images/slide2.jpg"
+		var image3 = new Image()
+		image3.src="images/slide4.jpg"
+		var image4 = new Image()
+		image4.src="images/slide5.jpg"
+		var image5 = new Image()
+		image5.src="images/slide3.jpg"
+	</script>
+</head>
+<body>
+
+	<div id = "pagewrap">
+		<header id = "header">
+			<hgroup>
+				<h1 id = "site-logo">IT'S FUN TO BE A NERD</h1>
+				<h2 id = "site-description">by TagFun</h2>
+			</hgroup>
+			
+			<!-- MAIN NAV -->
+			<nav>
+				<ul id = "main-nav" class = "clearfix">
+					<li><a href ="index.html">Home</a></li>
+					<li><a href ="#">Admin</a></li>
+					<li><a href ="http://www.tagfun.wordpress.com">Blog</a></li>
+					<li><a href ="portfolio.html">Portfolio</a></li>
+					<li><a href = "contact.html" onclick="javascript:void window.open('http://www.jmdprojects.net/practise/contact.html','1390563498409','width=600,height=600,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">Contact</a></li>
+				</ul>
+			</nav>
+			<form id = "searchform">
+				<input type="search" id="s" placeholder="Search">
+			</form>
+
+		<! -- HEADER -->
+		</header>
+		<div id = "content">
+			<article class = "post clearfix">
+				<header>
+		<!-- ------ SLIDES ---------------- -->
+		<div class ="slideit">
+      		<img src="images/slide1.jpg" name="slide" width="1270" height="400" />
+		<script>
+		<!--
+		//variable that will increment through the images
+		var step=1
+		function slideit(){
+			//if browser does not support the image object, exit.
+			if (!document.images)
+				return
+				document.images.slide.src=eval("image"+step+".src")
+			if (step<5)
+				step++
+			else
+				step=1
+				//call function "slideit()" every 2.5 seconds
+				setTimeout("slideit()",2500)
+		}
+			slideit()
+			//-->
+		</script>
+		</div>
+		
+				<h1 class="post-title">Why is this site made for?</h1>
+				<p> This side is made for demostrate myself as a programmer. From the navigator bar you can read more about Admin (from me) her goals and why she decided to take the path of programmer in this male-dominated career. I'm also writing my "technology blog" which contains my project (Raspberry Pi) and other stuff concerning my knowledge of programming languages and of course also my improvement with them. Of course I have also attached my porfolio so you should check out what I'm able to do. My portfolio isn't ready yet, but I'm trying my best to add more and more when I'll finish my current projects. Don't be shy, if you have anything to ask or you have some feedback for me just click the "contact" button and fill the form. </p>
+			</header>
+			<figure class="post-image"> 
+				<h1 class="post-title">Responsive Web-design?</h1>
+				<p>My website is supporting "Responsive Web-design" and "mobile-first" way of thinking. As you can see, the resolution is changing depending the oparator and browser size that you are using. Stylesheet contains three different sizes like: 980px, 650px and 480px. So you can also visit my page by using your smartphone, tablet or other smart device. </p>
+				<img src="images/sample-image.jpg" /> 
+			</figure>
+		</article>
+		</div>
+		<aside id = "sidebar">
+			<section class = "widget">
+				<h4 class = "widgettitle">Recommended links</h4>
+				<ul>
+					<li><a href="http://www.w3schools.com/">W3School</a></li>
+					<li><a href="http://www.wordpress.com">Wordpress</a></li>
+					<li><a href="http://www.github.com">GitHub</a></li>
+					<li><a href="http://www.phpclasses.org/">PHPClasses</a></li>
+					<li><a href="http://www.mysql.com/">MySQL.com</a></li>
+					<li><a href="http://www.ampparit.com/it">Ampparit.com - IT</a></li>
+					<li><a href="http://magento.com/">Magento</a></li>
+					<li><a href="http://www.raspberrypi.org/">Raspberry Pi</a></li>
+					<li><a href="http://www.tietokone.fi/">Tietokone.fi</a></li>
+					<li><a href="https://gist.github.com/">GithubGist</a></li>
+					<li><a href="http://pastebin.com/">PasteBin</a></li>
+					<li><a href="http://www.phpclasses.org/">AfterDawn</a></li>
+					<li><a href="http://www.howtogeek.com/">How to Geek?</a></li>
+				</ul>
+			</section>
+
+			<section class="widget clearfix">
+					<h4 class="widgettitle">Site is build with:</h4>
+					<ul>
+						<li><img src = "images/webdesign.png"</a></li>
+					</ul>
+			</section>
+			<img src = "images/logo.png">
+		</aside>
+		<footer id = "footer">
+			<p>Nina Ranta | nina.ranta [at] hotmail.com | +358407705829 | TagFun |</p>
+		</footer>
+	</div>
+</body>
+</html>
