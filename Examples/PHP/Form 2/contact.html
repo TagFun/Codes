@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>TagFun | Contact</title>
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="styleForm.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+ 
+<body>
+  <div class="wrapper"> 
+    <div id="contact_form">
+    <form name="form1" id="ff" method="post" action="contact.php">
+    <h1>Take contact</h1> 
+        <label>
+        <span>Name*:</span>
+        <input type="text" placeholder="Please enter your name" name="name" id="name" required autofocus>
+        </label>
+         
+        <label>
+        <span>Email*:</span>   
+        <input type="email" placeholder="Please enter your email" name="email" id="email" required>
+        </label>
+         
+        <label>
+        <span>Phone:</span>
+        <input type="tel" placeholder="Please enter your phone" name="phone" id="phone">
+        </label>
+         
+        <label>
+        <span>Message*:</span>
+        <input type="text" placeholder="Please enter your message" name="message" id="message" required>
+        </label>
+       
+        <input class="sendButton" type="submit" name="Submit" value="Send">
+             
+    </form>
+    </div>
+   </div>
+ 
+</body>
+</html>
