@@ -6,11 +6,11 @@
 
 	session_start();
 
-	// Yhdistetään tietokantaan
+	// Yhdistetï¿½ï¿½n tietokantaan
 	$connect = mysql_connect("mysql1.sigmatic.fi","jmdproje_konami","");
 	if (!$connect)
 	{
-		die("MySQL ei voida yhdistää!");
+		die("MySQL ei voida yhdistï¿½ï¿½!");
 	}
 
 	$DB = mysql_select_db('jmdproje_kyselyjarjestelma');
@@ -44,27 +44,27 @@
 	// Tarkistetaan annetut tiedot
 	if($Sahkoposti == "")
 	{
-		die("Et antanut käyttäjätunnustasi (sahkopostiosoitetta)");
+		die("Et antanut kï¿½yttï¿½jï¿½tunnustasi (sahkopostiosoitetta)");
 	}
 
 	if($Sahkoposti_Check == false)
 	{
-		die("Kyseistä sähköpostia ei ole olemassa");
+		die("Kyseistï¿½ sï¿½hkï¿½postia ei ole olemassa");
 	}
 
 	if($Etunimi == "")
 	{
-		die("Et antanut etunimeäsi");
+		die("Et antanut etunimeï¿½si");
 	}
 
 	if($Sukunimi == "")
 	{
-		die("Et antanut sukunimeäsi");
+		die("Et antanut sukunimeï¿½si");
 	}
 
 	if($Ika == "")
 	{
-		die("Et antanut ikääsi");
+		die("Et antanut ikï¿½ï¿½si");
 	}
 
 	if($Sukupuoli == "")
@@ -72,12 +72,12 @@
 		die("Et antanut sukupuoltasi");
 	}
 
-	// Tarkistetaan onko käyttäjätunnus jo olemassa
+	// Tarkistetaan onko kï¿½yttï¿½jï¿½tunnus jo olemassa
 	$Query = mysql_query("SELECT * FROM kayttajat WHERE Sahkoposti = '$Sahkoposti' ");
 	$Checkuser = mysql_num_rows($Query);
 	if($Checkuser != 0)
 	{ 
-		echo "Käyttäjätunnus " .$Sahkoposti. " on jo käytössä." . "</br>";
+		echo "Kï¿½yttï¿½jï¿½tunnus " .$Sahkoposti. " on jo kï¿½ytï¿½ssï¿½." . "</br>";
 	}
 
 	$Salasana = 'a';
@@ -86,7 +86,7 @@
 	if(!mysql_query("INSERT INTO kayttajat (Sahkoposti, Salasana, Etunimi, Sukunimi, Yritys, Ika, Sukupuoli)
 	VALUES ('$Sahkoposti', '$Salasana', '$Etunimi', '$Sukunimi', '$Yritys', '$Ika', '$Sukupuoli')"))
 	{
-		die("Yritä uudestaan");
+		die("Yritï¿½ uudestaan");
 	}
 
 	else
@@ -113,9 +113,9 @@
 		mysql_query("UPDATE kayttajat SET Salasana ='$Encrypt_salasana' WHERE Sahkoposti='$Sahkoposti'");
 
 		$to      = $Sahkoposti;
-		$subject = 'Kiitos rekisteröinnistä!';
-		$message = "Tervetuloa käyttäjäksemme! \n" . "Kayttajatunnus: $Sahkoposti \n" . "Salasana: " . $Salasana;
-		$headers = 'From: SplitSurvey@example.com' . "\r\n" .
+		$subject = 'Kiitos rekisterï¿½innistï¿½!';
+		$message = "Tervetuloa kï¿½yttï¿½jï¿½ksemme! \n" . "Kayttajatunnus: $Sahkoposti \n" . "Salasana: " . $Salasana;
+		$headers = 'From: tagfun@example.com' . "\r\n" .
     		'Reply-To: SplitSurvey@example.com' . "\r\n" .
     		'X-Mailer: PHP/' . phpversion();
 
