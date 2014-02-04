@@ -1,0 +1,61 @@
+/* --------- MEDIA -------- */
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+	.body {
+		width: 90%;
+		font-size: 95%;
+	}
+
+	.mainheader img {
+		width: 100%;
+	}
+
+	.mainheader nav {
+	height: 160px;
+	}
+
+	.mainheader nav ul {
+		padding-left: 0;
+	}
+
+	.mainheader nav ul li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.mainheader nav a:link, .mainheader nav a:visited {
+		padding: 10px 25px;
+		height: 20px;
+		display: block;
+	}
+
+	.content {
+		width: 100%;
+		float: left;
+		margin-top: 2%;
+	}
+
+	.post-info {
+		display: none;
+	}
+
+	.topcontent {
+		background-color: #FFF;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		padding: 3% 5%;
+		margin-top: 2%;
+		margin-bottom: 4%;
+	}
+
+	.bottomcontent {
+		margin-top: 3%;
+	}
+
+	.top-sidebar .middle-sidebar, .bottom-sidebar {
+		width: 94%;
+		margin: 1% 0 2% 0;
+		padding: 2% 3%;
+	}
+
+}
