@@ -111,16 +111,3 @@ footer {
 	background: #A09885;
 	border-radius: 50px;
 }
-
-
-/*------------- MEDIA --------------- */
-
-@media screen and (max-width: 740px) {
-	.left-col {
-		width: 100%;
-	}
-
-	.sidebar {
-		width: 100%;
-	}
-}
