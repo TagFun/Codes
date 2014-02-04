@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+       <title>TagFun | Gallery</title>
+       <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	
+	<!-- html5.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class = "container">
+		<header><img src = "images/logo.png"></header>
+		<section id = "content">
+		<div class = "gallery">
+			<ul>
+				<li><a class="fancybox" rel="group"  href = "images/cat1.jpg" title = "Mysli"><img src = "thumb/cat1.jpg" "Cat1"/></a></li>
+				<li><a class="fancybox" rel="group"  href = "images/cat2.jpg" title = "Mysli"><img src = "thumb/cat2.jpg" "Cat2"/></a></li>
+				<li><a class="fancybox" rel="group"  href = "images/cat3.jpg" title = "Mysli"><img src = "thumb/cat3.jpg" "Cat3"/></a></li>
+				<li><a class="fancybox" rel="group"  href = "images/cat4.jpg" title = "Mysli"><img src = "thumb/cat4.jpg" "Cat4"/></a></li>	
+				<li><a class="fancybox" rel="group"  href = "images/cat5.jpg" title = "Rusina aka. Russe"><img src = "thumb/cat5.jpg" width="100" height=100" alt = "Cat5"/></a></li>
+				<li><a class="fancybox" rel="group"  href = "images/cat6.jpg" title = "Rusina aka. Russe"><img src = "thumb/cat6.jpg" width="100" height=100" alt = "Cat6"/></a></li>
+				<li><a class="fancybox" rel="group"  href = "images/cat7.jpg" title = "Russe ja Mysli"><img src = "thumb/cat7.jpg" width="100" height=100" alt = "Cat7"/></a></li>
+				<li><a class="fancybox" rel="group"  href = "images/cat8.jpg" title = "Rusina aka. Russe"><img src = "thumb/cat8.jpg" width="100" height=100" alt = "Cat8"/></a></li>
+			</ul>
+		</div>
+		</section>
+		<footer>
+			<p>copyright &copy; <a href = "http://www.jmdprojects.net/blog-tagfun">TagFun</p></a>
+		</footer
+	</div>
+
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+	</script>
+</body>
+</html>
+

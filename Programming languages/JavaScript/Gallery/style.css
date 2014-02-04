@@ -1,0 +1,82 @@
+html, body, div, h3, p, ul, li, img {
+	margin: 0;
+	padding: 0;
+}
+
+article, aside, figure, footer, header, hpgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	background-image: url('images/plaid.png');
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width: 700px;
+	margin: 30px auto 0;
+}
+
+header {
+	background-color: #42517f;
+	border-bottom: 1px solid #000;
+	border-radius: 5px;
+	padding-bottom: 5px;
+	margin: 5px 0;
+}
+
+header img {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin: 30px auto 0;
+}
+
+#content {
+	background: #A8A8A8;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.gallery {
+	width: 528px;
+	margin: auto;
+}
+
+.gallery ul {
+	list-style: none;
+}
+
+.gallery li {
+	float: left;
+	margin: 9.5px
+}
+
+.gallery img {
+	display: block;
+	padding: 5px;
+	background-color: #42517f;
+	border: 1px solid #99adeb;
+	box-shadow: 1px 1px 2px #000;
+}
+
+.gallery img:hover {
+	border: 1px solid #fff;
+} 
+
+footer {
+	background: #222222;
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+footer p, a {
+	color: #fff;
+	text-align: center;
+	font-size: 11px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
