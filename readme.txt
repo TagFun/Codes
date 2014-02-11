@@ -1,3 +1,3 @@
 My GitGub account is made for sharing my knowledge
 
-(c) Nina | TagFun
+(c) Nina | www.jmdprojects.net/blog-tagfun
