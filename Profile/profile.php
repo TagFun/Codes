@@ -65,7 +65,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>TagFun | Nina Ranta</title>
 <link rel="icon" type="image/png" href="/tagfun/images/icon.png"/>
-<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="css/style.css">
 
 </head>

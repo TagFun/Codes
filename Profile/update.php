@@ -29,7 +29,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>TagFun | Nina Ranta</title>
 <link rel="icon" type="image/png" href="/tagfun/images/icon.png"/>
-<link href="styleUpdate.css" rel="stylesheet" type="text/css" />
+<link href="css/styleUpdate.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
