@@ -25,8 +25,6 @@
 			// Write the file
 			fwrite($handle, $strData . "\r");
 			fclose($handle);
-
-	
 		}
 
 		/**
