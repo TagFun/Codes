@@ -1,5 +1,7 @@
 <?php
 
+	// PHP OOP TUTORIAL | SCOPE & CALCULATOR
+
 	class Calc
 	{
 		public $input;
