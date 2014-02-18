@@ -6,11 +6,11 @@
 		private $_FileName;
 		private $_Data;
 
-	/**
-	* @desc	writes to a file
-	* @param str	$strFileName	the name of the file
-	* @param str	$strData	Data to be appended to the file
-	*/
+		/**
+		* @desc	writes to a file
+		* @param str	$strFileName	the name of the file
+		* @param str	$strData	Data to be appended to the file
+		*/
 		public function Write($strFileName, $strData)
 		{
 			// Set Class Vars
@@ -25,8 +25,6 @@
 			// Write the file
 			fwrite($handle, $strData . "\r");
 			fclose($handle);
-
-	
 		}
 
 		/**
