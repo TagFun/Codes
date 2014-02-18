@@ -1,6 +1,6 @@
 package examples;
 
-public class For {
+public class ExampleFor {
 	
 	/**
 	 *@author Nina | TagFun | http://www.jmdprojects.net/blog-tagfun 

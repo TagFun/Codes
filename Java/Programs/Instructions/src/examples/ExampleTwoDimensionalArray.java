@@ -1,6 +1,6 @@
 package examples;
 
-public class TwoDimensionalArray {
+public class ExampleTwoDimensionalArray {
 	
 	/**
 	 * @author Nina | TagFun | http://www.jmdprojects.net/blog-tagfun

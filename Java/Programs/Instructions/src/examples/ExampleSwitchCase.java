@@ -1,6 +1,6 @@
 package examples;
 
-public class SwitchCase {
+public class ExampleSwitchCase {
 	
 	/**
 	 * @author Nina | TagFun | http://www.jmdprojects.net/blog-tagfun

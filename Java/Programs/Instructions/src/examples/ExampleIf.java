@@ -1,6 +1,6 @@
 package examples;
 
-public class If {
+public class ExampleIf {
 
 	/**
 	 * @author Nina | TagFun | http://www.jmdprojects.net/blog-tagfun

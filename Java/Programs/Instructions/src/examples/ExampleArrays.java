@@ -1,6 +1,6 @@
 package examples;
 
-public class Arrays {
+public class ExampleArrays {
 	
 	/**
 	 * @param args

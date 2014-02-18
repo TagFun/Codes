@@ -1,6 +1,6 @@
 package examples;
 
-public class AndOr {
+public class ExampleAndOr {
 	
 	/**
 	 * @param args

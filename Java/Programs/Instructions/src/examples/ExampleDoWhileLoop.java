@@ -1,20 +1,21 @@
 package examples;
 
-public class Calculation {
+public class ExampleDoWhileLoop {
 	
 	/**
 	 * @param args
 	 * @author Nina | Tagfun | http://www.jmdprojects.net/blog-tagfun
 	 */
-	
-	public static void main(String[] args) {
-		System.out.println("Hello World");
-		
-		int x = 10;
-		int y = 20;
-		int result = x % y;
-	
-		System.out.println("result = " + result);
-	}
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x = 10;
+		
+		do {
+			System.out.println("x = " + x);
+			x--;
+			
+		} while (x >= 0);
+
+	}
 }

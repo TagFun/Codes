@@ -1,4 +1,6 @@
-// Class name
+package examples;
+
+//Class name
 public class Demo {
 	
 	// function for result and returning it
@@ -22,4 +24,3 @@ public class Demo {
 	}
 
 }
- 

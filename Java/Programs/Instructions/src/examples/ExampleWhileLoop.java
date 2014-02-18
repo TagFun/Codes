@@ -1,6 +1,6 @@
 package examples;
 
-public class DoWhileLoop {
+public class ExampleWhileLoop {
 	
 	/**
 	 * @param args
@@ -9,13 +9,14 @@ public class DoWhileLoop {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int x = 10;
+		int x = -10;
 		
-		do {
+		while(x <= 0) {
 			System.out.println("x = " + x);
-			x--;
-			
-		} while (x >= 0);
+			x++;
+			// This is the same thing as x++ --> x = x + 1;
+		}
 
 	}
+
 }

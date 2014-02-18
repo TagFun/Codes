@@ -1,6 +1,6 @@
 package examples;
 
-public class String {
+public class ExampleString {
 	
 	/**
 	 * @author Nina | TagFun | http://www.jmdprojects.net/blog-tagfun
