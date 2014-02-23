@@ -5,7 +5,7 @@
 <head>
 	<!-- Meta -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>User controltitle>
+	<title>User control<title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 	<!-- Load CSS -->
