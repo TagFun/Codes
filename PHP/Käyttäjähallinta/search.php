@@ -81,7 +81,6 @@ if (strlen($search_string) >= 1 && $search_string !== ' ') {
 		$output = str_replace('urlString', 'javascript:void(0);', $html);
 		$output = str_replace('nameString', '<b>No results!</b>', $output);
 		$output = str_replace('functionString', 'Sorry :(', $output);
-		$output = str_replace('jokuString', ' ', $output);
 		
 
 		// Output
