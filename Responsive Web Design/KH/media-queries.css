@@ -1,0 +1,50 @@
+@media screen and (min-width: 701px) and (max-width: 960px) {
+
+	#wrapper {
+		width: 90%;
+	}
+
+	#banner p {
+		width: 100%;
+	}
+
+	#content section {
+		width: 95%;
+		margin: 40px 0 0 0;
+		padding: 2%;
+	}
+
+	#content figure img {
+		width: 10%;
+		float: left;
+		margin-right: 10%;
+	}
+		
+	#content figure figcaption {
+		margin-left: 10%;
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	#wrapper {
+		width: 90%;
+	}
+
+	#banner p {
+		width: 100%;
+		clear: both;
+	}
+
+	#content section {
+		width: 95%;
+		margin: 40px 0 0 0;
+		padding: 2%;
+	}
+
+	#content figure img {
+		display: none;
+	}
+
+}
