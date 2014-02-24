@@ -8,8 +8,8 @@
 
 		<!-- Main Title -->
 		<div class="icon"></div>
-		<h1 class="title">K‰ytt‰j‰hallinta</h1>
-		<h5 class="title">(Etsi k‰ytt‰ji‰ tietokannasta etunimen tai sukunimen avulla)</h5>
+		<h1 class="title">K√§ytt√§j√§hallinta</h1>
+		<h5 class="title">(Hakukriteerein√§: etunimi, sukunimi tai k√§ytt√§j√§taso)/h5>
 
 		<!-- Main Input -->
 		<input type="text"  id="search" autocomplete="off">
