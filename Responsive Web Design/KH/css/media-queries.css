@@ -1,0 +1,66 @@
+@media screen and (min-width: 627px) and (max-width: 980px) {
+
+	#wrapper {
+		width: 90%;
+	}
+
+	#banner p {
+		width: 100%;
+	}
+
+	#content section {
+		width: 95%;
+		margin: 40px 0 0 0;
+		padding: 2%;
+	}
+
+	#content figure img {
+		width: 10%;
+		float: left;
+		margin-right: 10%;
+	}
+		
+	#content figure figcaption {
+		margin-left: 10%;
+		width: 90%;
+	}
+	
+	nav {
+		display: none;
+	}
+
+	.dropDownList {
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 252px) and (max-width: 626px) {
+
+	#wrapper {
+		width: 90%;
+	}
+
+	#banner p {
+		width: 100%;
+		clear: both;
+	}
+
+	#content section {
+		width: 95%;
+		margin: 40px 0 0 0;
+		padding: 2%;
+	}
+
+	#content figure img {
+		display: none;
+	}
+	
+	nav {
+		display: none;
+	}
+
+	.dropDownList {
+		display: inline;
+	}
+
+}
