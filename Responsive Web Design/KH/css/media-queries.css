@@ -24,7 +24,18 @@
 		margin-left: 10%;
 		width: 90%;
 	}
+<<<<<<< HEAD:Responsive Web Design/KH/css/media-queries.css
 
+=======
+	
+	nav {
+		display: none;
+	}
+
+	.dropDownList {
+		display: inline;
+	}
+>>>>>>> fbf486ec6556a3f8de159659e9d230a29b0e0b79:Responsive Web Design/KH/media-queries.css
 }
 
 @media screen and (min-width: 252px) and (max-width: 626px) {
@@ -46,6 +57,14 @@
 
 	#content figure img {
 		display: none;
+	}
+	
+	nav {
+		display: none;
+	}
+
+	.dropDownList {
+		display: inline;
 	}
 
 }
