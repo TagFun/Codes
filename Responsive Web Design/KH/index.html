@@ -3,14 +3,17 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
 	<title>TagFun | Kingdom Hearts</title>
-	<link rel="icon" type="image/png" href="images/favicon.png"/>
+	<link rel="icon" type="image/png" href="images/icon.png"/>
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 	<!-- main css -->
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 
 	<!-- media queries css -->
-	<link href="media-queries.css" rel="stylesheet" type="text/css">
+	<link href="css/media-queries.css" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap 3 style -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
 	<!-- html5.js for IE less than 9 -->
 	<!--[if lt IE 9]>
@@ -24,10 +27,41 @@
 </head>
 <body>
 	<div id = "wrapper" class = "cfix">
+			<div class = "navbar navbar-inverse navbar-static-top">
+				<!-- NAVIGATION -->
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+                               
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+					<ul class = "nav navbar-nav navbar-left">
+ 						<li class = "active"><a href = "#">Home</a></li>
+                                          <li><a href = "#">Blog</a></li>
+                                          <li class = "dropdown">   
+							<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Games <b class = "caret"></b></a>
+								<ul class = "dropdown-menu">
+									<li><a href = "#">KH I</a></li>
+                                                               <li><a href = "#">KH II</a></li>
+                                                               <li><a href = "#">KH: BbS</a></li>
+                                                               <li><a href = "#">KH: CoM</a></li>
+                                                        </ul> 
+                                          </li>
+
+						<li><a href = "#">About</a></li>
+						<li><a href = "#">Contact</a></li>
+                                       
+					</ul>
+                           	</div>       
+		</div> <!-- NAVIGATION ENDS -->
+	
+
 		<!-- HEADER -->
 		<header>
 			<img src = "images/kh.png" alt "Kingdom Hearts" />
 		</header>
+
 
 		<div class = "clear"></div>
 
@@ -78,6 +112,10 @@
 		</footer>
 
 	</div> <!-- END WRAPPER -->
+
+	<!-- jQuery scripts -->
+	<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+       <script src = "js/bootstrap.js"></script>
 
 </body>
 </html>
