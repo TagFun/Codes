@@ -26,6 +26,57 @@ header img {
 	width: 100%;
 }
 
+/* NAV
+----------------------------------------------------- */
+
+nav {
+	background-color: #666;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-bottom: 5%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+nav ul li {
+	float: left;
+	display: inline;
+}
+
+nav ul li a {
+	margin-left: 50%;
+	margin-right: auto;
+}
+
+nav a:link, nav a:visited {
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+nav a:hover, nav a:active, nav .active a:link, nav .active a:visited {
+	background-color: #CF5C3F;
+	text-shadow: none;
+}
+		
+nav ul li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.dropDownList {
+	display: none;
+}
+
+
+
 /* HOMEPAGE CONTENT
 ----------------------------------------------------- */
 
