@@ -24,6 +24,14 @@
 		margin-left: 10%;
 		width: 90%;
 	}
+	
+	nav {
+		display: none;
+	}
+
+	.dropDownList {
+		display: inline;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -45,6 +53,14 @@
 
 	#content figure img {
 		display: none;
+	}
+	
+	nav {
+		display: none;
+	}
+
+	.dropDownList {
+		display: inline;
 	}
 
 }
