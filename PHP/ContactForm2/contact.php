@@ -17,7 +17,15 @@
  
 	if(@mail($to,$subject,$message,$headers))
 	{
- 	 	header('Location: contacted.html');
+		echo "Kiitos yhteydenotostasi!";
+ 	 	require("contact.html");
 	}
+
+	else
+	{
+		echo "Jokin meni pieleen...";
+		require("contact.html");
+	}
+
 
 ?>
