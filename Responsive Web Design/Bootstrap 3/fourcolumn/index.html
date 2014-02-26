@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+	<title>Bootstrap 3 | First test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href = "css/bootstrap.min.css" rel = "stylesheet">
+	<link href = "css/style.css" rel = "stylesheet">
+</head>
+<body>
+
+	<div class = "navbar navbar-inverse navbar-static-top">
+		<div class = "container">
+                              
+			<!-- HEADER TEXT --> 
+	 		<a href = "#" class = "navbar-brand">Bootstrap 3 test</a>
+                               
+				<!-- NAVIGATION -->
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+                               
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+					<ul class = "nav navbar-nav navbar-right">
+ 						<li class = "active"><a href = "#">Home</a></li>
+                                          <li><a href = "#">Blog</a></li>
+                                          <li class = "dropdown">   
+							<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Social Media <b class = "caret"></b></a>
+								<ul class = "dropdown-menu">
+									<li><a href = "#">Twitter</a></li>
+                                                               <li><a href = "#">Facebook</a></li>
+                                                               <li><a href = "#">Google+</a></li>
+                                                               <li><a href = "#">Instagram</a></li>
+                                                        </ul> 
+                                          </li>
+
+						<li><a href = "#">About</a></li>
+						<li><a href = "#contact" data-toggle = "modal">Contact</a></li>
+                                       
+					</ul>
+                           	</div>       
+		</div> <!-- NAVIGATION ENDS -->
+	</div>
+
+	<div class = "container">
+		<!-- JUMBOTRON -->
+		<div class = "jumbotron">
+			<center><h1>Lorem Ipsum</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae sapien non risus ornare posuere sed et leo. Aenean vel rutrum diam. Ut lacinia feugiat commodo. Vivamus leo nisl, convallis vel ligula vitae, ultricies sollicitudin lorem. Proin ut accumsan tellus. Aliquam bibendum blandit est eu pretium. Cras rhoncus erat purus, quis facilisis metus lobortis ac. Aliquam volutpat felis ligula, vel vestibulum urna laoreet sed. Mauris vel nisi sed lorem vehicula gravida. Etiam interdum nisl facilisis erat porta porta. In semper elit justo, at feugiat urna rhoncus eget. Cras dolor nisl, hendrerit quis ligula nec, gravida lacinia risus. Mauris ut urna sed ante condimentum vehicula. </p>
+			<a href = "http://fi.lipsum.com/feed/html" class = "btn btn-default">Watch now!</a>
+			<a href = "https://twitter.com/" class = "btn btn-info">Worth to Tweet this!</a></center>
+		</div>		
+	</div>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-md-3">
+				<h3><a href = "#">Column-one</a></h3>
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo blandit tempor. Cras ac erat orci. Nullam tempus ligula convallis lacinia euismod. Morbi sed eros sagittis neque pretium imperdiet. Maecenas id nibh vitae nunc tempus euismod. </p>
+				<a href = "#" class = "btn btn-default">Read More</a>
+                   
+                	</div>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-md-3">
+				<h3><a href = "#">Column-two</a></h3>
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo blandit tempor. Cras ac erat orci. Nullam tempus ligula convallis lacinia euismod. Morbi sed eros sagittis neque pretium imperdiet. Maecenas id nibh vitae nunc tempus euismod. </p>
+				<a href = "#" class = "btn btn-default">Read More</a>
+                   
+                	</div>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-md-3">
+				<h3><a href = "#">Column-three</a></h3>
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo blandit tempor. Cras ac erat orci. Nullam tempus ligula convallis lacinia euismod. Morbi sed eros sagittis neque pretium imperdiet. Maecenas id nibh vitae nunc tempus euismod. </p>
+				<a href = "#" class = "btn btn-default">Read More</a>
+                   
+                	</div>
+
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-md-3">
+				<h3><a href = "#">Column-four</a></h3>
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo blandit tempor. Cras ac erat orci. Nullam tempus ligula convallis lacinia euismod. Morbi sed eros sagittis neque pretium imperdiet. Maecenas id nibh vitae nunc tempus euismod. </p>
+				<a href = "#" class = "btn btn-default">Read More</a>
+                   
+                	</div>
+		</div>
+	</div>
+	
+	<!-- FOOTER -->
+	<div class = "navbar navbar-default navbar-fixed-bottom">
+		<div class = "container">
+			<p class = "navbar-text pull-left">&copy Nina | TagFun</p>
+			<a href = "http://youtube.com/codersguide" class = "navbar-btn btn-danger btn pull-right">Subscribe on YouTube</a>
+		</div>
+	</div>
+
+	<!-- CONTACT -->
+	<div class = "modal fade" id = "contact" role = "dialog">
+		<div class = "modal-dialog">
+			<div class = "modal-content">
+				<form class = "form-horizontal">
+					<div class = "modal-header">
+						<h4>Contact</h4>
+					</div>
+					<div class = "modal-body">
+						<div class = "form-group">
+							<label for = "contact-name" class = "col-lg-2 control-label">Name:</label>
+							<div class = "col-lg-10">
+								<input type = "text" class = "form-control" id = "contact-name" placeholder = "Full name">
+							</div>
+						</div>
+
+						<div class = "form-group">
+							<label for = "contact-email" class = "col-lg-2 control-label">Email:</label>
+							<div class = "col-lg-10">
+								<input type = "email" class = "form-control" id = "contact-email" placeholder = "you@example.com">
+							</div>
+						</div>
+			
+						<div class = "form-group">
+							<label for = "contact-msg" class = "col-lg-2 control-label">Message:</label>
+							<div class = "col-lg-10">
+								<textarea class = "form-control" rows = "8"></textarea>
+							</div>
+						</div>
+					</div>
+				
+					<div class = "modal-footer">
+						<a class = "btn btn-default" data-dismiss = "modal">Close</a>		
+						<button class = "btn btn-primary" type = "submit">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+ 
+	<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src = "js/bootstrap.js"></script>
+               
+</body>
+</html>
