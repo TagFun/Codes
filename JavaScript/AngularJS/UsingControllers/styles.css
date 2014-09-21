@@ -1,0 +1,16 @@
+body {
+    margin: 25px;
+}
+
+th {
+    background-color: grey;
+    font-family: arial;
+    color: white;
+    padding: 0 50px 0 50px;
+}
+
+tr {
+    text-align: center;
+}
+
+
